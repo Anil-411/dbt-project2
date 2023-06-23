@@ -1,5 +1,5 @@
 with raw_payments as(
-select * from RAW.STRIPE.PAYMENT
+select * from {{ source('stripe','payments') }}
 )
 
 select

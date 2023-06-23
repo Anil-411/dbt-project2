@@ -1,5 +1,5 @@
 with raw_orders as(
-select * from RAW.JAFFLE_SHOP.ORDERS
+select * from {{ source('jaffle_shop','orders') }}
 )
 
 select

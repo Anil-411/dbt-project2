@@ -4,8 +4,8 @@ select * from {{ ref("stg_payments") }}
 
 select
 payment_id,
-orderid,
-paymentmethod,
+order_id,
+payment_method,
 status,
 case
 when amount=0 then 1
